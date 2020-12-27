@@ -19,18 +19,18 @@
                     <input type="hidden" name="_csrf_token" th:value="${_csrf_token}"/>
                     <input type="text" name="author" maxlength="12" id="author"
                            class="form-control input-control clearfix"
-                           placeholder="姓名 (*)"
+                           placeholder="Name (*)"
                     />
                     <input type="email" name="mail" id="mail" class="form-control input-control clearfix"
-                           placeholder="邮箱 (*)"
+                           placeholder="E-mail (*)"
                     />
                     <input type="url" name="url" id="url" class="form-control input-control clearfix"
-                           placeholder="网址 (http://)"
+                           placeholder="URL (http://)"
                     />
-                    <textarea name="text" id="textarea" class="form-control" placeholder="以上信息可以为空,评论不能为空哦!"
+                    <textarea name="text" id="textarea" class="form-control" placeholder="Can not be empty!"
                               required="required" minlength="5"
                               maxlength="2000"></textarea>
-                    <button type="submit" class="submit" id="misubmit">提交</button>
+                    <button type="submit" class="submit" id="misubmit">Submit</button>
                 </form>
             </div>
             <div th:unless="${article.allowComment}">
